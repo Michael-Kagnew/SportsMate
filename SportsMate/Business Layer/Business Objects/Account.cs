@@ -3,6 +3,7 @@ using SportsMate.Models;
 using SportsMate.Utilities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -14,12 +15,15 @@ namespace SportsMate.Business_Layer.Business_Objects
 
         private static readonly  int MIN_AGE = 16;
 
-
+        [Required]
         public string FirstName { get; private set; }
-
-        public string LastName { get; set; }
+        
+        [Required]
+        public string LastName { get; private set; }
 
         public string AlphaID { get; private set; }
+        
+        [Required]
         public DateTime Birthday {
             get { return _birthday; }
 
