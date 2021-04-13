@@ -1,11 +1,8 @@
 ﻿using SportsMate.Business_Layer.Data_Structures;
-using SportsMate.Models;
 using SportsMate.Utilities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SportsMate.Business_Layer.Business_Objects
 {
@@ -13,7 +10,7 @@ namespace SportsMate.Business_Layer.Business_Objects
     {
         private DateTime _birthday;
 
-        private static readonly  int MIN_AGE = 16;
+        public static readonly  int MIN_AGE = 14;
 
         [Required]
         public string FirstName { get; private set; }
@@ -48,7 +45,7 @@ namespace SportsMate.Business_Layer.Business_Objects
             {
                 this.Birthday = ActualBirthDate;
 
-            } catch(Exception e)
+            } catch(Exception e) //Rethrowing
             {
                 throw;
             }

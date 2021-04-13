@@ -26,7 +26,7 @@ namespace SportsMate.Business_Layer.Business_Objects
         // TDOO finish this one to check all the accounts equipments, if they match with the sports
         public Boolean GetCurrentFulfilledEquipment()
         {
-            throw new Exception()
+            throw new Exception();
         }
     }
 }

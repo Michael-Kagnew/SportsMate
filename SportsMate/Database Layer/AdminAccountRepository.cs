@@ -19,12 +19,12 @@ namespace SportsMate.Database_Layer
 
         public void Create(AdminAccount entity)
         {
-            throw new NotImplementedException();
+            dbContext.Add(entity);
         }
 
         public void Delete(AdminAccount entity)
         {
-            throw new NotImplementedException();
+            dbContext.Remove(entity);
         }
 
         public void DeleteById(int id)

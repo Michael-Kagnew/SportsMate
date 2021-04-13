@@ -9,7 +9,8 @@ namespace SportsMate.Business_Layer.Business_Objects
     {
         public AdminAccount(string FirstName, string LastName, string Birthday) : base(FirstName, LastName, Birthday)
         {
-
         }
+
+
     }
 }
