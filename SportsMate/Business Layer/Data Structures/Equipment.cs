@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SportsMate.Business_Layer.Data_Structures
 {
-    public class Equipment
+    public struct Equipment
     {
         public EquipmentName EquipmentName { get; set; }
         public int Quantity { get; set; }
