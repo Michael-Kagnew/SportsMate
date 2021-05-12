@@ -9,13 +9,13 @@ namespace SportsMate.Business_Layer.Business_Objects
 {
     public abstract class SportSession
     {
-        private List<SessionRole> SessionMembers { get; set; }
+        private List<Account> SessionMembers { get; set; }
 
         private Map Map { get; set; }
 
         public Sport Sport { get; set; }
 
-        public SportSession(List<SessionRole> InitialMembers, Sport Sport)
+        public SportSession(List<Account> InitialMembers, Sport Sport)
         {
             this.SessionMembers = InitialMembers;
         }
